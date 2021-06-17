@@ -1,0 +1,18 @@
+This data set comprises experiments carried out considering four Android devices, each named Usense 2, 3, 4, and 5, respectively. These devices were carried by people sharing the same affiliation during their daily routines (commuting between home and office, going to leisure activities, attending meetings in the office). Aall the data was collected each and every one minute.
+
+We set up experiments making use of Samsung Gelaxy S3 devices. For each experiment, there is the following set of data files:
+* SocialProximity.dat has three columns: Timestamp, DeviceName, Encounter Duration, Average Encounter Duration, Social Strength (Per hour) and Social Strength(Per minute) towards <DeviceName>
+* DistanceOutput.dat has three columns: Timestamp, DeviceName, and Distance towards <DeviceName>
+* Microphone.dat has two columns: Timestamp, and Soundlevel(QUIET, NORMAL, ALERT and NOISY)
+* PhysicalActivity.dat has two columns: Timestamp, and Activity as STATIONARY, WALKING and RUNNING
+
+For experiment 1, 
+Experiment was conducted for the period of 22 hours. Among the four devices, two devices were placed in the lab, and other two devices were carried by users. The intention was to collect the data when the two devices are in close contact and the other two devices with daily routines.
+
+For experiment 2, 
+Second experiment was conducted for the period of 50 hours. All the devices are following the daily routines.
+
+For experiment 3,
+Third experiment was conducted for 22 hours. Devices were following their daily routine with two periods (one of X hours and the other of Y hours) where all devices left the office and moved randomly around the office area. The intention was to capture a dynamic variability of the collected data.
+
+
