@@ -3,11 +3,11 @@
 #
 
 ## Scenario settings
-Scenario.name = ContactTrace_scenario
+Scenario.name = ContactTrace_scenario_EpComplete_MB
 Scenario.simulateConnections = true
 Scenario.updateInterval = 0.1
 # 43200s == 12h
-Scenario.endTime = 864000
+Scenario.endTime = 337418
 
 
 ## Interface-specific settings:
@@ -52,7 +52,7 @@ Scenario.nrofHostGroups = 1
 
 
 # Common settings for all groups
-Group.movementModel = RandomWaypoint
+Group.movementModel = MapBasedMovement
 Group.router = EpidemicRouter
 Group.bufferSize = 5M
 Group.waitTime = 0, 120
@@ -64,7 +64,7 @@ Group.speed = 0.5, 1.5
 # Message TTL of 300 minutes (5 hours)
 Group.msgTtl = 300
 
-Group.nrofHosts = 79
+Group.nrofHosts = 98
 
 # group1 (pedestrians) specific settings
 Group1.groupID = p
@@ -87,9 +87,16 @@ Group1.groupID = p
 # Events1.prefix = M
 
 ## Events for SER
-Events.nrof = 1
+Events.nrof = 2
 Events1.class = StandardEventsReader
-Events1.filePath = dataset_haggleTest.tsv
+Events1.filePath = dataset_haggle-complete.tsv
+
+## Events for Messages Generator
+Events2.class = MessageEventGenerator
+Events2.interval = 25, 35
+Events2.size = 500k, 1M
+Events2.hosts = 0,78
+Events2.prefix = M
 
 
 ## Movement model settings
@@ -111,13 +118,14 @@ MapBasedMovement.mapFile4 = data/shops.wkt
 ## Reports - all report names have to be valid report classes
 
 # how many reports to load
-Report.nrofReports = 1
+Report.nrofReports = 2
 # length of the warm up period (simulated seconds)
 Report.warmup = 0
 # default directory of reports (can be overridden per Report with output setting)
 Report.reportDir = reports/
 # Report classes to load
 Report.report1 = MessageStatsReport
+Report.report2 = MessageDeliveryReport
 
 ## Default settings for some routers settings
 ProphetRouter.secondsInTimeUnit = 30

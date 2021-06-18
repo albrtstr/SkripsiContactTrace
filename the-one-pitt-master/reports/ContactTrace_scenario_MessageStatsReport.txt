@@ -1,0 +1,20 @@
+Message stats for scenario ContactTrace_scenario
+sim_time: 864000.0999
+created: 29293
+started: 235980
+relayed: 220335
+aborted: 15644
+dropped: 25334
+removed: 220335
+delivered: 3766
+delivery_prob: 0.1286
+response_prob: 0.0000
+overhead_ratio: 57.5064
+latency_avg: 4488.7142
+latency_med: 3353.4999
+hopcount_avg: 7.4416
+hopcount_med: 6
+buffertime_avg: 659.1038
+buffertime_med: 398.1000
+rtt_avg: NaN
+rtt_med: NaN
