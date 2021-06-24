@@ -3,7 +3,7 @@
 #
 
 ## Scenario settings
-Scenario.name = ContactTrace_scenario_EpComplete_MB
+Scenario.name = ContactTrace_scenario_EpComplete_RandomWalk
 Scenario.simulateConnections = true
 Scenario.updateInterval = 0.1
 # 43200s == 12h
@@ -52,7 +52,7 @@ Scenario.nrofHostGroups = 1
 
 
 # Common settings for all groups
-Group.movementModel = MapBasedMovement
+Group.movementModel = RandomWalk
 Group.router = EpidemicRouter
 Group.bufferSize = 5M
 Group.waitTime = 0, 120
